@@ -12,6 +12,13 @@ function my_theme_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
+function tt_hidetitle_class($classes) {
+    if ( is_single() || is_page () ):
+    $classes[] = 'hidetitle';
+    return $classes;
+    endif;
+    return $classes;
+}
 
-
+add_filter('post_class', 'tt_hidetitle_class');
 ?>

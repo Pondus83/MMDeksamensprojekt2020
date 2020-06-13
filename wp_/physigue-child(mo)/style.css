@@ -1,0 +1,76 @@
+ 
+/*
+Theme Name: Physique-child(mo)
+Theme URI: https://flythemes.net/wordpress-themes/free-gym-wordpress-theme/
+Description: Physique child-theme
+Author: Gruppe1.
+Author URI: https://github.com/Pondus83/MMDeksamensprojekt2020
+Template: Physique
+Version: 1.0
+*/
+
+/* Tematilpasning starter her
+-----------------------------------------------------------------------*/
+
+.main-nav ul li a { 
+		color:white;
+	}
+
+#header .logo p { 
+	color:white; 
+}
+
+.main-nav ul li:hover ul {
+		background-color:#242c3a;
+	}
+
+.logo h1 { 
+	font:800 35px 'Oswald'; 
+	color:#ffffff;
+}
+
+.site-main {
+    width: 100%;
+}
+
+/* Rette header til med farve/fastholde den i toppen/får den til at være øverst */
+#header {
+	background-color:#233770;
+	position: sticky;
+    top: 0;
+	z-index: 1;
+}
+
+.hidetitle .entry-title {
+	display:none;
+}
+/* -------Forsøg på at skifte farve på Menu i mobil/ipad. Virker ikke, ved ikke hvorfor--------- */
+/* .toggle{
+	background-color:#233770;
+}
+
+.header-inner {
+	background-color:#233770;
+} */
+
+/**-------------theme-responsive.css----------*/
+
+@media screen and (min-width:1000px){
+    .main-nav ul {
+        padding-top: 130px;
+        margin:0;
+        /* padding: 88px 0; */
+        float:right;
+	}
+
+	.site-main {
+		width: 100%;
+	}
+}
+
+/* Forsøg på at skifte farve på Menu i mobil/ipad. Virker heller ikke her */
+/* @media screen and (max-width: 999px) and (min-width: 720px) {
+	.toggleMenu a {
+		background-color:#233770;
+	}
+} */
