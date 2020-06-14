@@ -53,6 +53,13 @@ Version: 1.0
 	background-color:#233770;
 } */
 
+/* Tilføjet font */
+@font-face { 
+	font-family: Mukta Regular; 
+	src: url(http://test-site.com/wp-content/themes/twentynineteen/fonts/Mukta-Regular.ttf); 
+	font-weight: normal; 
+	}
+
 /**-------------theme-responsive.css----------*/
 
 @media screen and (min-width:1000px){
